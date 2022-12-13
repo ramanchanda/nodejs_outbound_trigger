@@ -6,6 +6,5 @@
   "keywords": ["node", "express", "heroku"],
   "image": "heroku/nodejs",
   "scripts": {
-    "postdeploy": "heroku config:set DOMAIN=$HEROKU_APP_NAME.herokuapp.com --app $HEROKU_APP_NAME"
-  }
+  "postdeploy": "heroku config:set DOMAIN = {ENV['HEROKU_APP_NAME']}.herokuapp.com"
 }
