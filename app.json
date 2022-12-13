@@ -8,7 +8,7 @@
     }
   ],
     "scripts": {
-  "postdeploy": heroku config:set ENV_VAR1 ="https://$HEROKU_APP_NAME.herokuapp.com"
+  "postdeploy": "heroku config:set ENV_VAR1 ="https://$HEROKU_APP_NAME.herokuapp.com""
     },
 
   "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/main/public/node.svg",
