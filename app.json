@@ -7,4 +7,5 @@
   "image": "heroku/nodejs",
   "scripts": {
   "postdeploy": "heroku config:set DOMAIN = {ENV['HEROKU_APP_NAME']}.herokuapp.com"
+  }
 }
