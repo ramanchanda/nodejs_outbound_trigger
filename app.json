@@ -6,7 +6,7 @@
   "keywords": ["node", "express", "heroku"],
   "image": "heroku/nodejs",
   "scripts": {
-  "postdeploy": ""#{ENV['HEROKU_APP_NAME']}.herokuapp.com""
+  "postdeploy": "#{ENV['HEROKU_APP_NAME']}.herokuapp.com""
   }
 }
 
