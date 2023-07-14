@@ -13,7 +13,11 @@ const client = new Client({
   }
 });
 
+
+
 console.log(client.connect());
+
+console.log(client.query("SELECT NOW()"));
 
 client.query('SELECT table_schema,table_name FROM information_schema.tables;', (err, res) => {
   if (err) throw err;
