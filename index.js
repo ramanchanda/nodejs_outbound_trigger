@@ -13,7 +13,7 @@ const client = new Client({
   }
 });
 
-console.log(client.connect(););
+console.log(client.connect());
 
 client.query('SELECT table_schema,table_name FROM information_schema.tables;', (err, res) => {
   if (err) throw err;
