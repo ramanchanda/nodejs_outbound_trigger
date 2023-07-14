@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 5000
 const { Client } = require('pg');
 
 const client = new Client({
-  connectionString: process.env.DATABASE_USER_H_URL,
+  connectionString: process.env.DATABASE_USER_URL,
   ssl: {
     rejectUnauthorized: false
   }
